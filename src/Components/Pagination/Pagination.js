@@ -249,6 +249,7 @@ Pagination.defaultProps = {
     hideDisabled: false,
     hideFirstLastButton: false,
     hidePrevNextButton: false,
+    // TODO: disabled 옵션 추가 바람
 }
 
 export default Pagination;
