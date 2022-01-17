@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+._pagination-container {
+  display: inline-flex;
+}
+._pagination-container * {
+  font-family: 'Roboto', sans-serif;
+}
+._pagination-container .pages {
+  display: flex;
+  padding: 5px;
+  background-color: #FFF;
+  border-radius: 999px;
+  box-shadow: 0 3px 6px -5px rgba(0, 0, 0, 0.12), 0 2px 5px 2px rgba(0, 0, 0, 0.05);
+}
+._pagination-container .pages .page {
+  border-radius: 999px;
+  padding: 10px 15px;
+  border: none;
+  margin: 0px 2.5px;
+  font-weight: 400;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #333;
+}
+._pagination-container .pages .page:not(:disabled):not(.active) {
+  cursor: pointer;
+}
+._pagination-container .pages .page.first,
+._pagination-container .pages .page.last,
+._pagination-container .pages .page.prev,
+._pagination-container .pages .page.next {
+  padding: 8px 15px;
+}
+._pagination-container .pages .page.first,
+._pagination-container .pages .page.prev {
+  padding-left: 10px;
+}
+._pagination-container .pages .page.last,
+._pagination-container .pages .page.next {
+  padding-right: 10px;
+}
+._pagination-container .pages .page.first,
+._pagination-container .pages .page.last {
+  gap: 5px;
+}
+._pagination-container .pages .page:not(:disabled):not(.active):hover {
+  background-color: #e1efff;
+}
+._pagination-container .pages .page.active {
+  background-color: #418ef3;
+  color: #FFF;
+}
+._pagination-container .pages .page:disabled {
+  color: #bbb;
+}

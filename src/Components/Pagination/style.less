@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@blue   : #1483ff;
+@original-blue: #418ef3;
+@background-blue: #e1efff;
+@shadow: 0 3px 6px -5px rgb(0 0 0 / 12%), 0 2px 5px 2px rgb(0 0 0 / 5%);
+
+._pagination-container {
+  display: inline-flex;
+
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .pages {
+    display: flex;
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 999px;
+    box-shadow: @shadow;
+
+    .page {
+      border-radius: 999px;
+      padding: 10px 15px;
+      border: none;
+      margin: 0px 2.5px;
+      font-weight: 400;
+      background-color: inherit;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      color: #333;
+
+      &:not(:disabled):not(.active) {
+        cursor: pointer;
+      }
+
+      &.first, &.last,
+      &.prev, &.next {
+        padding: 8px 15px;
+      }
+
+      &.first,
+      &.prev {
+        padding-left: 10px;
+      }
+
+      &.last,
+      &.next {
+        padding-right: 10px;
+      }
+
+      &.first, &.last {
+        gap: 5px;
+      }
+
+      &:not(:disabled):not(.active):hover {
+      //&:not(:disabled):not(.active):focus {
+        //background-color: #eee;
+        background-color: @background-blue;
+      }
+
+      &.active {
+        //background-color: @background-blue;
+        //color: @blue;
+        background-color: @original-blue;
+        color: #FFF;
+      }
+
+      &:disabled {
+        color: #bbb;
+      }
+    }
+  }
+}
