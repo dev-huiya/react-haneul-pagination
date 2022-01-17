@@ -16,24 +16,8 @@ function Page () {
 
   return (
       <React.Fragment>
-        <div style={{
-          width: "100vw",
-          minHeight: "100vh",
-          backgroundColor: "#f7f7f7",
-        }}>
-          <div
-              className={""}
-              style={{
-                width: "1000px",
-                margin: "0 auto",
-                padding: "100px 0px",
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "40px",
-              }}
-          >
+        <div className={"example"}>
+          <div className={"center"}>
             <Pagination
                 {...setting}
                 onChange={(number)=>{
