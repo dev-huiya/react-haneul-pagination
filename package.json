@@ -1,19 +1,47 @@
 {
   "name": "@haneul/pagination",
+  "description": "Pagination UI component for React",
   "version": "0.1.0",
-  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "keywords": [
+    "haneul",
+    "react",
+    "react-component",
+    "react-pagination",
+    "pagination",
+    "pager"
+  ],
+  "license": "MIT",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "classnames": "^2.3.1",
     "paginator": "^1.0.0",
     "prop-types": "^15.8.1",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-icons": "^4.3.1",
+
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0"
   },
+  "private": false,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
+    "publish:npm": "del /p dist && babel src/lib -d dist --copy-files"
+  },
+  "babel": {
+    "presets": ["@babel/preset-react"]
   },
   "eslintConfig": {
     "extends": [
@@ -34,13 +62,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
     "@babel/cli": "^7.16.8",
-    "@babel/preset-react": "^7.16.7",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-scripts": "5.0.0"
+    "@babel/preset-react": "^7.16.7"
   }
 }
