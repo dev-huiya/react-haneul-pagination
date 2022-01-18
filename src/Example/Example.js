@@ -2,8 +2,8 @@ import React, { useState} from 'react';
 
 import "./example.css";
 
-import Pagination from "Components/Pagination";
-import "Components/Pagination/style.css";
+import Pagination from "../lib";
+import "src/lib/style.css";
 
 function Page () {
 
